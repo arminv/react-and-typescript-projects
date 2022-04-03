@@ -28,6 +28,7 @@ const Counter = () => {
             value={count}
             onChange={changeCount}
           />
+          {/* NOTE: below is the inline version of the above input, not how more type information is inferred this way! */}
           <input
             id="set-to"
             type="number"

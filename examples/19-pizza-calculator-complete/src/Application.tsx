@@ -6,6 +6,7 @@ type PizzaData = {
   slicesPerPie: number;
 };
 
+// NOTE: how we combine two types:
 type PizzaState = PizzaData & { pizzasNeeded: number };
 
 type PizzaAction = {

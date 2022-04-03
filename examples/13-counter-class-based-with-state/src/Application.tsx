@@ -25,6 +25,7 @@ class Counter extends Component<CounterProps, CounterState> {
     this.setState({ count: 0 });
   };
 
+  // NOTE: the type of 'event' argument:
   changeCount = (event: ChangeEvent<HTMLInputElement>) => {
     this.setState({ count: +event.target.value });
   };
