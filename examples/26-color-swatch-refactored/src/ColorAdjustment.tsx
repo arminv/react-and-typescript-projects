@@ -12,6 +12,8 @@ export interface AdjustmentInputProps {
 }
 
 export interface ColorAdjustmentProps {
+  // NOTE: `ComponentType` is a React utility type:
+  // NOTE: `Adjustment` is uppercase here because it relates to a React component:
   Adjustment: React.ComponentType<AdjustmentInputProps>;
 }
 

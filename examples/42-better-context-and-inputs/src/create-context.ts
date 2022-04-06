@@ -9,5 +9,6 @@ export function createContext<A extends {} | null>() {
       throw new Error('useContext must be inside a Provider with a value');
     return c;
   };
+  // NOTE: 'as const' makes the array read-only:
   return [useContext, ctx.Provider] as const;
 }
